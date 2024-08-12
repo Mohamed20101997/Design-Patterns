@@ -1,0 +1,18 @@
+{
+    "name": "moham/design_pattern",
+    "description": "Code Example for Design Patterns in php",
+    "authors": [
+        {
+            "name": "Mohamed20101997",
+            "email": "mohamedadel31038@gmail.com"
+        }
+    ],
+    "require": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creational\\": "Creational"
+        }
+    }
+}
