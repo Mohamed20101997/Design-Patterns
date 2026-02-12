@@ -1,0 +1,8 @@
+{
+    "phpunit.phpunit": "/var/www/html/Design-Patterns/vendor/bin/phpunit",
+    "phpunit.php": "php",
+    "phpunit.args": [
+        "-c",
+        "/var/www/html/Design-Patterns/phpunit.xml"
+    ]
+}
