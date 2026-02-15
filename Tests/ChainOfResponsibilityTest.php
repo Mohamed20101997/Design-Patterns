@@ -4,15 +4,15 @@ namespace Tests;
 
 
 use PHPUnit\Framework\TestCase;
-use Structural\ChainOfResponsibility\AhmedHandler;
-use Structural\ChainOfResponsibility\AliHandler;
-use Structural\ChainOfResponsibility\MohamedHandler;
-use Structural\ChainOfResponsibility\Request;
+use Behavioral\ChainOfResponsibility\AhmedHandler;
+use Behavioral\ChainOfResponsibility\AliHandler;
+use Behavioral\ChainOfResponsibility\MohamedHandler;
+use Behavioral\ChainOfResponsibility\Request;
 
 class ChainOfResponsibilityTest extends TestCase
 {
 
-    public function testAliCanHandleRequest()
+    public function test_ali_can_handle_request()
     {
         $ali = new AliHandler();
         $mohamed = new MohamedHandler();
@@ -28,7 +28,7 @@ class ChainOfResponsibilityTest extends TestCase
         $this->assertEquals($ali::class, $request->getHandler());
     }
 
-    public function testMohamedCanHandleRequest()
+    public function test_mohamed_can_handle_request()
     {
         $ali = new AliHandler();
         $mohamed = new MohamedHandler();
@@ -44,7 +44,7 @@ class ChainOfResponsibilityTest extends TestCase
         $this->assertEquals($mohamed::class, $request->getHandler());
     }
 
-    public function testAhmedCanHandleRequest()
+    public function test_ahmed_can_handle_request()
     {
         $ali = new AliHandler();
         $mohamed = new MohamedHandler();
@@ -60,7 +60,7 @@ class ChainOfResponsibilityTest extends TestCase
         $this->assertEquals($ahmed::class, $request->getHandler());
     }
 
-    public function testNoHandlerCanHandleRequest()
+    public function test_no_handler_can_handle_request()
     {
         $ali = new AliHandler();
         $mohamed = new MohamedHandler();

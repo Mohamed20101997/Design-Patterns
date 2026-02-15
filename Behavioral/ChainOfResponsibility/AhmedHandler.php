@@ -1,12 +1,13 @@
 <?php
 
-namespace Structural\ChainOfResponsibility;
+namespace Behavioral\ChainOfResponsibility;
 
-class MohamedHandler extends AbstractHandler
+class AhmedHandler extends AbstractHandler
 {
     public function handle(Request $request)
     {
-        if ($request->getId() < 20) {
+        if ($request->getId() < 60) {
+
             $request->setDone(true);
             $request->setHandler(self::class);
             return $request;

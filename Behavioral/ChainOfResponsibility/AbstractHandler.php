@@ -1,6 +1,6 @@
 <?php
 
-namespace Structural\ChainOfResponsibility;
+namespace Behavioral\ChainOfResponsibility;
 
 abstract class AbstractHandler implements HandlerInterface
 {
